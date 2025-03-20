@@ -1,0 +1,15 @@
+Solution Approach
+For Choosing a Backend Framework !
+
+Since external libraries for algorithms are not allowed, we can use FastAPI (Python) or Spring Boot (Java).
+I'll use FastAPI (Python) for this solution.
+Setup the API Endpoints
+
+/numbers/{numberid} → Fetches numbers from the third-party API, maintains a sliding window, and calculates the average.
+Key Implementation Details
+
+Fetch numbers from the given test API.
+Maintain a unique sliding window (max size = 10).
+Remove duplicate values from the fetched API response.
+Handle API failures or slow responses (over 500ms timeout).
+Return JSON response in the required format.
